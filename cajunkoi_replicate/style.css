@@ -2,7 +2,10 @@
 
 :root {
   --yellow: #efd22d;
-  --bg-color: #16161d;
+  --bg-color: #111114;
+  --bg-end: #202028;
+  --bg-start: #3a3a5a ;
+  --yellow-hover: #baa112;
 }
 
 * {
@@ -42,11 +45,12 @@
   justify-content: center;
   align-items: center;
   margin: 7rem 18rem;
-  background-color: var(--bg-color);
-  border:10px solid var(--bg-color);
+  background:linear-gradient( var(--bg-start), var(--bg-end));
+  border:10px solid linear-gradient( var(--bg-start), var(--bg-end));
   border-radius: 40px;
-  padding: 2rem 2rem;
+  padding: 3rem 5rem;
   margin-top: 23%;
+  box-shadow: 4px 4px 4px #00000072 ;
 }
 
 .h1-email {
@@ -60,21 +64,24 @@
   text-align: center;
   font-weight: 400;
   font-size: 20px;
+  background: none;
 }
 
 .form {
   margin: 1rem;
   margin-bottom: 0;
+  background: none;
 }
 
 .email {
- width: 60%;
- border: 1px #ffffff solid;
- border-radius: 50px;
- box-sizing: border-box;
- outline: none;
- height: 2.9rem;
- padding: 1rem;
+  background: none;
+  width: 60%;
+  border: 1px #ffffff solid;
+  border-radius: 50px;
+  box-sizing: border-box;
+  outline: none;
+  height: 2.9rem;
+  padding: 1rem;
 }
 
 .button{
@@ -85,6 +92,12 @@
   margin-left: 20px;
   border: 10px var(--yellow) solid;
   border-radius: 50px;
+}
+
+.button:hover {
+  background: var(--yellow-hover);
+  border: var(--yellow-hover);
+  cursor: pointer;
 }
 
 .main-body {
@@ -113,6 +126,13 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  /* scale: 1000px; */
+  box-shadow:0px 0px 25px 0.5px #ffd90053;
+  transform: scale(1.01);
 }
 
 .img-for-links {
