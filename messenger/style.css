@@ -1,9 +1,9 @@
 * {
   margin: 0px;
   color: white;
-}  
+}
 
-.body{
+.body {
   width: 100%;
   height: 100%;
   background: #1b1b1d;
@@ -21,11 +21,10 @@
   border-radius: 10px;
 }
 
-
 /* left-hand side bar */
 .layout-1 {
   grid-template-rows: 2fr 0.01fr 4fr 0.9fr;
-  position:relative;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -36,26 +35,27 @@
 }
 
 .line {
-  display:block;
-   width:70%;
-   border-top: 2px solid #ccc;
+  display: block;
+  width: 70%;
+  border-top: 2px solid #ccc;
 }
 
 .images {
   height: 35px;
   width: 35px;
-  margin: 0.2em;border-radius: 10px;
+  margin: 0.2em;
+  border-radius: 10px;
 }
 
 .layout-2 {
-  display: grid; 
+  display: grid;
   flex-direction: column;
   align-items: center;
 }
 
 .chat {
- padding: 1em;
- width: 100%;
+  padding: 1em;
+  width: 100%;
 }
 
 .h1 {
@@ -64,7 +64,7 @@
 
 .chat input {
   width: 80%;
-  border: 2px solid white; 
+  border: 2px solid white;
   border-radius: 50px;
   padding: 0.5em;
   background: none;
@@ -121,7 +121,7 @@
 .layout-4 {
   display: grid;
   width: 100%;
-  grid-template-rows: 4fr 6fr ;
+  grid-template-rows: 4fr 6fr;
 }
 .friend-detail {
   width: 100%;
